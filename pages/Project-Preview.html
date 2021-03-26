@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/plugins/bootstrap 4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+
+    <title>Project Preview</title>
+</head>
+<body>
+    <h1>Project Preview/Update</h1>
+    <div class="preview">
+        <div class="information">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group row">
+                        <label  class="col-sm-2 col-form-label">Nom :</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nom"  placeholder="Nom">              
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">  
+                    <div class="form-group row">
+                        <label  class="col-sm-2 col-form-label">Etat :</label>
+                        <div class="col-sm-10">
+                            <div class="input-group mb-3">
+                              <select class="custom-select" id="inputGroupSelect01">
+                                <option selected>Choose...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Reference :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Reference"  placeholder="Reference">              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">  
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Categorie :</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="Categorie"  placeholder="Categorie">              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Date Debut :</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="DateDebut"  placeholder="../../....">              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">  
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Date Fin :</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="DateFin"  placeholder="../../....">              
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Description :</label>
+                    <div class="col-sm-10">
+                        <textarea class="form-control" id="Description" rows="5"></textarea>              
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">  
+                <div class="form-group row">
+                    <label  class="col-sm-2 col-form-label">Date Echeance :</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="DateEcheance"  placeholder="../../....">              
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="Coments">
+        <h3>
+            Coments
+        </h3>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    </div>
+        <div class="listeTaches">
+            <h1>
+                liste Of Taches
+            </h1>
+            <div class="table">
+                    
+            <table class="table table-striped">
+                <nav class="navbar navbar-light bg-light justify-content-between" >
+                    <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <a class="btn add" href="add-Project.html" role="button">Add Project</a>
+                    </form>
+                </nav>
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Preview</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="tache-preview.html">Preview</a></td>
+                    <td><a href="#" class="tb-delete">Delete</a></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="listeTaches">
+            <h1>
+                liste Of Users
+            </h1>
+            <div class="table">
+            <table class="table table-striped">    
+                <nav class="navbar navbar-light bg-light justify-content-between">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        <a class="btn add" href="add-user.html" role="button">Add User</a>
+                    </form>
+                </nav>        
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                    <th scope="col">Preview</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td><a href="user-preview.html">Preview</a></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="submit">
+            <a class="btn save" href="#" role="button" >Save</a>
+            <a class="btn cancel" href="#" role="button" >Cancel</a>
+        </div>
+</body>
+</html>
