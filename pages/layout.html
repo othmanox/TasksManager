@@ -1,110 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/plugins/bootstrap 4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/app.css">
-    <title>Dashbord</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Tasks Manager</title>
+
+  <!-- Bootstrap css -->
+  <link href="../assets/plugins/bootstrap 4/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="../assets/css/app.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="container-fluid layout">
-        <div class="navbare">
-            <div class="row layout">
-                <div class="col-2">
-                    <div class="brand-name">
-                        <h1>
-                            DPS
-                        </h1>
-                    </div>
-                </div>
-                <div class="col-6">
 
-                </div>
-                <div class="col-4">
-                    <div class="nav-links">
-                        <div class="row layout">
-                            <div class="col-md-4">
-                                <a href="#">Log-out</a>
-                            </div>
-                            <div class="col-md-4">
-                                <a href="Client-preview.html">My Account</a>
-                            </div>
-                            <div class="col-md-4 img">
-                                <img src="../assets/img/user-icon.svg" >
-                            </div>
-                        </div>
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Tasks Manager</div>
+      <div class="list-group list-group-flush">
+        <a href="" class="list-group-item list-group-item-action">Dashboard</a>
+        <a href="../Clients.html" class="list-group-item list-group-item-action">Clients</a>
+        <a href="#" class="list-group-item list-group-item-action">Projects</a>
+        <a href="#" class="list-group-item list-group-item-action">Tasks</a>
+        <a href="#" class="list-group-item list-group-item-action">User-Settings</a>
+        <a href="#" class="list-group-item list-group-item-action">Client-Settings</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <a class="" id="menu-toggle"><i class="fas fa-bars"></i></a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item dropdown show">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      user-name
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right show" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Disconnect</a>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
+          </div>
+      </nav>
+      <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+          <h3 class="txt-themecolor">Dashboard</h3>
         </div>
-        <div class="content">
-            <nav class="sidebar">
-                    <div class="sidebar-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                Dashboard <span class="sr-only">(current)</span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Projects
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Taches
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                User Sitting
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Client Sitting
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-            <div class="main">
-                    <div class="sidebar-sticky">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                Dashboard <span class="sr-only">(current)</span>
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Projects
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Taches
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                User Sitting
-                            </a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                Client Sitting
-                            </a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
+        <div class="col-md-7 align-self-center">
 
+        </div>
+
+      </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                  <div class="card card-body">
+                    <h3 class="box-title m-b-0">Projects</h3>
+                    <div class="row">
+                      <div class="col-sm-12 col-xs-12">
+                          <!--Section: Block Content-->
+                        <section>
+                            <!--Grid row-->
+                            <div class="row">
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 mb-4">
+                        
+                                <!-- Card -->
+                                <div class="card">
+                        
+                                <div class="card-body">
+                        
+                                    <p class="text-uppercase small mb-2"><strong>To do</strong></p>
+                                    <h5 class="font-weight-bold mb-0">
+                                        4567
+                                    </h5>
+                                </div>
+                        
+                                </div>
+                                <!-- Card -->
+                        
+                            </div>
+                            <!--Grid column-->
+                        
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                        
+                                <!-- Card -->
+                                <div class="card">
+                        
+                                <div class="card-body">
+                        
+                                    <p class="text-uppercase small mb-2"><strong>Current</strong></p>
+                                    <h5 class="font-weight-bold mb-0">
+                                        534
+                                    </h5>
+                                </div>
+                        
+                                </div>
+                                <!-- Card -->
+                        
+                            </div>
+                            <!--Grid column-->
+                        
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                        
+                                <!-- Card -->
+                                <div class="card">
+                        
+                                <div class="card-body">
+                        
+                                    <p class="text-uppercase small mb-2"><strong>Ends</strong></p>
+                                    <h5 class="font-weight-bold mb-0">
+                                        123
+                                    </h5>
+                                </div>
+                        
+                                </div>
+                                <!-- Card -->
+                        
+                            </div>
+                            <!--Grid column-->
+                        
+                            </div>
+                            <!--Grid row-->
+                        
+                        </section>
+                        <!--Section: Block Content-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card card-body">
+                    <h3 class="box-title m-b-0">Comments</h3>
+                    <section class="comments">
+                        <article class="comment">
+                          <a class="comment-img" href="user-preview.html">
+                            <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
+                          </a>
+                          <div class="comment-body">
+                            <div class="text">
+                              <p>Hello, this is an example from me</p>
+                            </div>
+                            <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
+                          </div>
+                        </article>
+                          <article class="comment">
+                          <a class="comment-img" href="user-preview.html">
+                            <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
+                          </a>
+                          <div class="comment-body">
+                            <div class="text">
+                              <p>if you are interested for  more about me visited my profile on social page</p>
+                              <p>To visit me you can click my name  <a target="_blank" href="user-preview.html">Besnik Hetemi</a> and send me frends request or send me a message in inbox</p>
+                            </div>
+                            <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
+                          </div>
+                        </article>
+                      </section>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card Tasks">
+                      <div class="card-body">
+                          <h4 class="box-title m-b-0">Tasks</h4>
+                          <div class="row">
+                            <div class="col-sm-12 col-xs-12">
+                                <!--Section: Block Content-->
+                              <section>
+                                  <!--Grid row-->
+                                  <div class="row">
+                                  <!--Grid column-->
+                                  <div class="col-lg-3 col-md-12 mb-4">
+                              
+                                      <!-- Card -->
+                                      <div class="card">
+                              
+                                      <div class="card-body">
+                                          <p class="text-uppercase small mb-2"><strong>To do</strong></p>
+                                          <h5 class="font-weight-bold mb-0">
+                                              4567
+                                          </h5>
+                                      </div>
+                              
+                                      </div>
+                                      <!-- Card -->
+                              
+                                  </div>
+                                  <!--Grid column-->
+                              
+                                  <!--Grid column-->
+                                  <div class="col-lg-3 col-md-6 mb-4">
+                              
+                                      <!-- Card -->
+                                      <div class="card">
+                              
+                                      <div class="card-body">
+                              
+                                          <p class="text-uppercase small mb-2"><strong>Current</strong></p>
+                                          <h5 class="font-weight-bold mb-0">
+                                              534
+                                          </h5>
+                                      </div>
+                              
+                                      </div>
+                                      <!-- Card -->
+                              
+                                  </div>
+                                  <!--Grid column-->
+                              
+                                  <!--Grid column-->
+                                  <div class="col-lg-3 col-md-6 mb-4">
+                              
+                                      <!-- Card -->
+                                      <div class="card">
+                              
+                                        <div class="card-body">
+                                
+                                            <p class="text-uppercase small mb-2"><strong>Ends</strong></p>
+                                            <h5 class="font-weight-bold mb-0">
+                                                123
+                                            </h5>
+                                        </div>
+                              
+                                      </div>
+                                      <!-- Card -->
+                                      
+                                  </div>
+                                  <div class="col-lg-3 col-md-6 mb-4">
+                              
+                                    <!-- Card -->
+                                    <div class="card">
+                            
+                                      <div class="card-body">
+                              
+                                          <p class="text-uppercase small mb-2"><strong>Late</strong></p>
+                                          <h5 class="font-weight-bold mb-0">
+                                              123
+                                          </h5>
+                                      </div>
+                            
+                                    </div>
+                                  <!--Grid column-->
+                              
+                                  </div>
+                                  <!--Grid row-->
+                              
+                              </section>
+                              <!--Section: Block Content-->
+                            </div>
+                          </div>
+      
+                      </div>
+                  </div>
+              </div>
+              </div>
         </div>
     </div>
-    
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap JavaScript -->
+  <script src="../assets/plugins/bootstrap 4/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
+
 </html>
