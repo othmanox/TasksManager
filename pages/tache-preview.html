@@ -12,6 +12,9 @@
 
   <!-- Bootstrap css -->
   <link href="../assets/plugins/bootstrap 4/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawsome CSS -->
+  <link href="../assets/fonts/fontawesome/css/all.min.css" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="../assets/css/app.css" rel="stylesheet">
 
@@ -19,196 +22,206 @@
 
 <body>
 
-  <div class="d-flex" id="wrapper">
 
-    <!-- Sidebar -->
-    <div class="border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Tasks Manager</div>
-      <div class="list-group list-group-flush">
-        <a href="Dashbord.html" class="list-group-item list-group-item-action">Dashboard</a>
-        <a href="liste-Project.html" class="list-group-item list-group-item-action">Projects</a>
-        <a href="liste-Taches.html" class="list-group-item list-group-item-action">Tasks</a>
-        <a href="liste-user.html" class="list-group-item list-group-item-action">User-Settings</a>
-        <a href="liste-Client.html" class="list-group-item list-group-item-action">Client-Settings</a>
-      </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
+    <div class="d-flex" id="wrapper">
 
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-
-      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
-        <a class="" id="menu-toggle"><i class="fas fa-bars"></i></a>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item dropdown show">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      user-name
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right show" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Disconnect</a>
-                    </div>
-                </li>
-            </ul>
+        <!-- Sidebar -->
+        <div class="border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading">Tasks Manager</div>
+          <div class="list-group list-group-flush">
+            <a href="Dashbord.html" class="list-group-item list-group-item-action">Dashboard</a>
+            <a href="liste-Project.html" class="list-group-item list-group-item-action">Projects</a>
+            <a href="liste-Taches.html" class="list-group-item list-group-item-action">Tasks</a>
+            <a href="liste-user.html" class="list-group-item list-group-item-action">User-Settings</a>
+            <a href="liste-Client.html" class="list-group-item list-group-item-action">Client-Settings</a>
           </div>
-      </nav>
-      <div class="row page-titles">
-        <div class="col-md-5 align-self-center">
-          <h3 class="txt-themecolor">Tasks</h3>
         </div>
-        <div class="col-md-7 align-self-center">
-
-        </div>
-
-      </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card card-body">
-                        <h3 class="box-title m-b-0">Task Preview</h3>
-                        <hr>
-                        <div class="preview">
-        
-                            <div class="information">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Project :</label>
-                                            <div class="col-sm-10">
-                                            <div class="input-group mb-3">
-                                                <select class="custom-select" id="inputGroupSelect01">
-                                                    <option selected>Choose...</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <div class="col-sm-6">  
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Nom :</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="nom"  placeholder="Nom">              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Date Debut :</label>
-                                            <div class="col-sm-10">
-                                                <input type="date" class="form-control" id="DateDebut"  placeholder="DateDebut">              
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">  
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Date Fin :</label>
-                                            <div class="col-sm-10">
-                                                <input type="date" class="form-control" id="DateFin"  placeholder="DateFin">              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Priorite :</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" class="form-control" id="Priorite"  placeholder="Priorite">              
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">  
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">User :</label>
-                                            <div class="col-sm-10">
-                                            <div class="input-group mb-3">
-                                                <select class="custom-select" id="inputGroupSelect01">
-                                                    <option selected>Choose...</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group row">
-                                            <label  class="col-sm-2 col-form-label">Description :</label>
-                                            <div class="col-sm-10">
-                                                <textarea class="form-control" id="Description" rows="5"></textarea>              
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="Coments">
-                                <h3>
-                                    Coments
-                                </h3>
-                                <section class="comments">
-                                    <article class="comment">
-                                      <a class="comment-img" href="user-preview.html">
-                                        <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
-                                      </a>
-                                      <div class="comment-body">
-                                        <div class="text">
-                                          <p>Hello, this is an example from me</p>
-                                        </div>
-                                        <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
-                                      </div>
-                                    </article>
-                                      <article class="comment">
-                                      <a class="comment-img" href="user-preview.html">
-                                        <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
-                                      </a>
-                                      <div class="comment-body">
-                                        <div class="text">
-                                          <p>if you are interested for  more about me visited my profile on social page</p>
-                                          <p>To visit me you can click my name  <a target="_blank" href="user-preview.html">Besnik Hetemi</a> and send me frends request or send me a message in inbox</p>
-                                        </div>
-                                        <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
-                                      </div>
-                                    </article>
-                                  </section>
-                            </div>
+        <!-- /#sidebar-wrapper -->
+    
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+    
+          <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <a class="" id="menu-toggle"><i class="fas fa-bars"></i></a>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown show">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          user-name
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right show" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Disconnect</a>
                         </div>
-                        <div class="submit">
-                                <a class="btn save" href="#" role="button" class="save">Save</a>
-                                <a class="btn delete" href="#" role="button" >Delete</a>
-                                <a class="btn cancel" href="#" role="button">Cancel</a>
+                    </li>
+                </ul>
+              </div>
+          </nav>
+          <div class="row page-titles">
+            <div class="col-md-5 align-self-center">
+              <h3 class="txt-themecolor">Tasks</h3>
+            </div>
+            <div class="col-md-7 align-self-center">
+    
+            </div>
+    
+          </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-body">
+                            <h3 class="box-title m-b-0">Task Preview</h3>
+                            <hr>
+                            <div class="preview">
+            
+                                <div class="information">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Project :</label>
+                                                <div class="col-sm-10">
+                                                <div class="input-group mb-3">
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="col-sm-6">  
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Nom :</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="nom"  placeholder="Nom">              
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Date Debut :</label>
+                                                <div class="col-sm-10">
+                                                    <input type="date" class="form-control" id="DateDebut"  placeholder="DateDebut">              
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">  
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Date Fin :</label>
+                                                <div class="col-sm-10">
+                                                    <input type="date" class="form-control" id="DateFin"  placeholder="DateFin">              
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Priorite :</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" class="form-control" id="Priorite"  placeholder="Priorite">              
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">  
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">User :</label>
+                                                <div class="col-sm-10">
+                                                <div class="input-group mb-3">
+                                                    <select class="custom-select" id="inputGroupSelect01">
+                                                        <option selected>Choose...</option>
+                                                        <option value="1">One</option>
+                                                        <option value="2">Two</option>
+                                                        <option value="3">Three</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-group row">
+                                                <label  class="col-sm-2 col-form-label">Description :</label>
+                                                <div class="col-sm-10">
+                                                    <textarea class="form-control" id="Description" rows="5"></textarea>              
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Coments">
+                                    <h3>
+                                        Coments
+                                    </h3>
+                                    <section class="comments">
+                                        <article class="comment">
+                                          <a class="comment-img" href="user-preview.html">
+                                            <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
+                                          </a>
+                                          <div class="comment-body">
+                                            <div class="text">
+                                              <p>Hello, this is an example from me</p>
+                                            </div>
+                                            <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
+                                          </div>
+                                        </article>
+                                          <article class="comment">
+                                          <a class="comment-img" href="user-preview.html">
+                                            <img src="../assets/img/user-icon.svg" alt="" width="50" height="50">
+                                          </a>
+                                          <div class="comment-body">
+                                            <div class="text">
+                                              <p>if you are interested for  more about me visited my profile on social page</p>
+                                              <p>To visit me you can click my name  <a target="_blank" href="user-preview.html">Besnik Hetemi</a> and send me frends request or send me a message in inbox</p>
+                                            </div>
+                                            <p class="attribution">by <a href="user-preview.html">Besnik Hetemi</a> at 14:23pm, 4 Dec 2015</p>
+                                          </div>
+                                        </article>
+                                      </section>
+                                </div>
                             </div>
-                    
+                            <div class="submit">
+                                    <a class="btn save" href="#" role="button" class="save">Save</a>
+                                    <a class="btn delete" href="#" role="button" >Delete</a>
+                                    <a class="btn cancel" href="#" role="button">Cancel</a>
+                                </div>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /#page-content-wrapper -->
+               
+        <!-- /#page-content-wrapper -->
 
   </div>
   <!-- /#wrapper -->
 
   <!-- Bootstrap JavaScript -->
+  <script src="../assets/plugins/jquery/jquery.min.js"></script>
   <script src="../assets/plugins/bootstrap 4/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Menu Show Script -->
+  <script>
+    $("#menu-toggle").click(function (e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
 
 </body>
 
