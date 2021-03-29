@@ -70,20 +70,18 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6{
 
 .sidenav {
     height: 100%;
-    width: 25%;
     background-color: #26DAD2;
-    padding-top: 20px;
-    padding: 20px;}
+    padding: 20px;
+    text-align: left;
+  }
 
 .user-img{
-    width: 250px;
-    height: 250px;
+    width: 40%;
     margin: auto;
-    margin-bottom: 29px;
 }
 
 .user-img img{
-    width: 250px;
+    width: 100%;
 }
 
 .user-info{
@@ -100,13 +98,6 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6{
 
 .user-main{
     display: inline-flex;
-}
-
-.user-details{
-    position: absolute;
-    left: 26%;
-    width: 74%;
-    padding: 20px;
 }
 
 .row{
@@ -154,14 +145,8 @@ h1 , h2 ,h3 ,h4 ,h5 ,h6{
     margin-left: 39%;
 }
 
-.col-md-4{
-    text-align: center;
-    margin-top: 3%;
-}
 
-.col-md-4.img{
-    margin-top: 0;
-}
+
 
 .col-md-2.sidebar{
     left: 0;
